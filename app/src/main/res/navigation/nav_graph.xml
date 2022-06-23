@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/usersFragment">
+
+    <fragment
+        android:id="@+id/usersFragment"
+        android:name="com.example.wave.ui.users.UsersFragment"
+        android:label="UsersFragment"
+        tools:layout="@layout/fragment_user_list">
+        <action
+            android:id="@+id/action_userFragment_to_userDetailsFragment"
+            app:destination="@id/userDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/userDetailsFragment"
+        android:name="com.example.wave.ui.userdetails.UserDetailsFragment"
+        android:label="userDetailsFragment"
+        tools:layout="@layout/fragment_user_details">
+        <argument
+            app:argType="com.example.wave.models.Results"
+            android:name="user"/>
+    </fragment>
+
+    <!-- Shared element transitions only work with replace fragment transaction, but DialogFragment uses add transaction.-->
+<!--    <dialog-->
+<!--        android:id="@+id/userDetailsDialog"-->
+<!--        android:name=""-->
+<!--        android:label="UserDetailsDialog" />-->
+<!--    <action android:id="@+id/action_global_userDetailsDialogFragment" app:destination="@id/userDetailsDialog" />-->
+</navigation>

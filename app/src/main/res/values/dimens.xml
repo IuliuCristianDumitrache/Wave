@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="extra_small">6dp</dimen>
+    <dimen name="small">8dp</dimen>
+    <dimen name="smaller_regular">12dp</dimen>
+    <dimen name="regular">16dp</dimen>
+    <dimen name="large">20dp</dimen>
+    <dimen name="extra_large">24dp</dimen>
+    <dimen name="large_30dp">30dp</dimen>
+    <dimen name="extra_large_40dp">40dp</dimen>
+    <dimen name="extra_large_48dp">48dp</dimen>
+    <dimen name="extra_large_70dp">70dp</dimen>
+    <dimen name="extra_large_90dp">90dp</dimen>
+
+    <dimen name="text_small">8sp</dimen>
+    <dimen name="text_smaller_regular">12sp</dimen>
+    <dimen name="text_regular">16sp</dimen>
+    <dimen name="text_bigger_regular">18sp</dimen>
+    <dimen name="text_large">20sp</dimen>
+    <dimen name="text_extra_large">24sp</dimen>
+    <dimen name="text_impact_size">48sp</dimen>
+    <dimen name="circular_image_dimens">50dp</dimen>
+    <dimen name="card_view_corner_radius">8dp</dimen>
+    <dimen name="card_elevation">8dp</dimen>
+    <dimen name="card_max_elevation">10dp</dimen>
+    <dimen name="circular_image_dimens_details">100dp</dimen>
+    <dimen name="button_dimens">48dp</dimen>
+</resources>

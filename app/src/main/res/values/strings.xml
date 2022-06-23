@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Wave</string>
+    <string name="no_internet_error">No Internet Connection</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="an_error_has_occured">An error has occurred, please try again</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="gender">Gender</string>
+    <string name="birth_date">Birth Date</string>
+    <string name="email">Email</string>
+    <string name="user_details">User Details</string>
+    <string name="view_profile">view profile</string>
+    <string name="user_name_transition">user_name_transition</string>
+    <string name="user_image_transition">user_image_transition</string>
+    <string name="user_location_transition">user_location_transition</string>
+    <string name="user_root_transition">user_root_transition</string>
+</resources>

@@ -1,0 +1,122 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
+    id 'androidx.navigation.safeargs.kotlin'
+    id 'kotlin-parcelize'
+}
+
+android {
+    compileSdk 32
+
+    defaultConfig {
+        applicationId "com.example.wave"
+        minSdk 23
+        targetSdk 32
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+        freeCompilerArgs += "-Xopt-in=kotlinx.coroutines.ExperimentalCoroutinesApi"
+    }
+}
+
+dependencies {
+
+    // Default dependencies
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.6.21"
+    implementation "androidx.core:core-ktx:1.8.0"
+    implementation "androidx.appcompat:appcompat:$appCompatVersion"
+    implementation "com.google.android.material:material:$materialVersion"
+    implementation "androidx.constraintlayout:constraintlayout:$constraintLayoutVersion"
+    testImplementation "junit:junit:$junitVersion"
+    androidTestImplementation "androidx.test.ext:junit:$testExtJunitVersion"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$espressoVersion"
+
+    // Fragment
+    implementation "androidx.fragment:fragment-ktx:$fragmentVersion"
+
+    // Lifecycle + ViewModel & LiveData
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycleVersion"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycleVersion"
+    implementation "android.arch.lifecycle:common-java8:1.1.1"
+
+    // Navigation Component
+    implementation "androidx.navigation:navigation-fragment-ktx:$navigationVersion"
+    implementation "androidx.navigation:navigation-ui-ktx:$navigationVersion"
+
+    // Room
+    kapt 'androidx.room:room-compiler:2.4.2'
+    implementation 'androidx.room:room-ktx:2.4.2'
+    implementation "androidx.room:room-runtime:2.4.2"
+
+    // OkHttp Logging interceptor
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.9.1'
+
+    // Coroutines
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutinesVersion"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutinesVersion"
+
+    // Dagger Hilt
+    implementation "com.google.dagger:hilt-android:$hiltVersion"
+    kapt "com.google.dagger:hilt-android-compiler:$hiltVersion"
+    implementation "androidx.hilt:hilt-lifecycle-viewmodel:$hiltAndroidXVersion"
+    kapt "androidx.hilt:hilt-compiler:1.0.0"
+    implementation "androidx.hilt:hilt-navigation-fragment:1.0.0"
+
+    // DataStore
+    implementation "androidx.datastore:datastore-preferences:$dataStoreVersion"
+
+    // Lottie
+    implementation "com.airbnb.android:lottie:3.4.0"
+
+    // SplashScreen
+    implementation 'androidx.core:core-splashscreen:1.0.0-rc01'
+
+    // Retrofit2
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation "com.squareup.retrofit2:converter-gson:2.9.0"
+
+    // Rx
+    implementation "io.reactivex.rxjava2:rxandroid:2.1.1"
+    implementation "io.reactivex.rxjava2:rxjava:2.2.19"
+
+    // Images
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    kapt 'com.github.bumptech.glide:compiler:4.9.0'
+
+    // Gson
+    implementation 'com.google.code.gson:gson:2.8.6'
+
+    // Paging
+    implementation "androidx.paging:paging-runtime-ktx:3.2.0-alpha01"
+
+    // Date
+    implementation 'joda-time:joda-time:2.10.2'
+
+}
+
+kapt {
+    correctErrorTypes true
+}

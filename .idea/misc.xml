@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/ic_close.xml" value="0.2485" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.151" />
+        <entry key="app/src/main/res/drawable/rectangle_shape.xml" value="0.2485" />
+        <entry key="app/src/main/res/drawable/white_rectangle_shape.xml" value="0.2485" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.31567028985507245" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.31567028985507245" />
+        <entry key="app/src/main/res/layout/dialog_fragment_user_detail.xml" value="0.31567028985507245" />
+        <entry key="app/src/main/res/layout/fragment_user_detail.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_user_details.xml" value="0.2015625" />
+        <entry key="app/src/main/res/layout/fragment_user_list.xml" value="0.31567028985507245" />
+        <entry key="app/src/main/res/layout/user_list_item.xml" value="0.31567028985507245" />
+        <entry key="app/src/main/res/layout/view_no_internet.xml" value="0.31567028985507245" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2485" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.151" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

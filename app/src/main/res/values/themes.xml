@@ -1,0 +1,43 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Wave" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/palette_pure_black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/palette_pure_white</item>
+        <!-- Customize your theme here. -->
+
+        <item name="snackbarStyle">@style/Widget.App.Snackbar</item>
+        <item name="snackbarButtonStyle">@style/Widget.App.SnackbarButton</item>
+        <item name="snackbarTextViewStyle">@style/Widget.App.SnackbarText</item>
+
+        <item name="android:statusBarColor">@color/palette_pure_black</item>
+        <item name="android:navigationBarColor">@color/palette_pure_black</item>
+
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+    <style name="Widget.App.Snackbar" parent="Widget.MaterialComponents.Snackbar">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.Snackbar</item>
+        <item name="actionTextColorAlpha">1</item>
+        <item name="android:textColor">@color/palette_pure_white</item>
+        <item name="colorOnSurface">@color/purple_500</item>
+    </style>
+
+    <style name="Widget.App.SnackbarButton" parent="Widget.MaterialComponents.Button.TextButton.Snackbar">
+        <item name="android:textColor">@color/palette_pure_white</item>
+    </style>
+
+    <style name="Widget.App.SnackbarText" parent="Widget.MaterialComponents.Snackbar.TextView">
+        <item name="android:textColor">@color/palette_pure_white</item>
+    </style>
+
+    <style name="ThemeOverlay.App.Snackbar" parent="">
+        <item name="colorPrimary">@color/palette_pure_white</item>
+        <item name="colorOnSurface">@color/purple_700</item>
+    </style>
+</resources>

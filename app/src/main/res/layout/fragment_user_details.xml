@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_transparent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/white_rectangle_shape"
+        android:transitionName="@string/user_root_transition"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.95">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/DescriptionLightTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/regular"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:maxLines="1"
+            app:layout_constraintBottom_toBottomOf="@id/btn_close"
+            app:layout_constraintEnd_toStartOf="@id/image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/btn_close" />
+
+        <ImageButton
+            android:id="@+id/btn_close"
+            android:layout_width="@dimen/button_dimens"
+            android:layout_height="@dimen/button_dimens"
+            android:layout_marginTop="@dimen/smaller_regular"
+            android:layout_marginEnd="@dimen/smaller_regular"
+            android:background="@color/palette_pure_white"
+            android:src="@drawable/ic_close"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/image"
+            android:layout_width="@dimen/circular_image_dimens_details"
+            android:layout_height="@dimen/circular_image_dimens_details"
+            android:layout_marginTop="@dimen/extra_large_40dp"
+            android:layout_marginBottom="@dimen/extra_small"
+            android:scaleType="fitCenter"
+            android:transitionName="@string/user_image_transition"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/roundedImageViewRounded" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/DescriptionLightTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/regular"
+            android:layout_marginTop="@dimen/small"
+            android:layout_marginEnd="@dimen/regular"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:transitionName="@string/user_name_transition"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image"
+            tools:text="Dumi Cristi" />
+
+        <TextView
+            android:id="@+id/tv_location"
+            style="@style/SmallDescriptionTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/regular"
+            android:layout_marginEnd="@dimen/regular"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:transitionName="@string/user_location_transition"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_name"
+            tools:text="Bucuresti" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/regular"
+            android:layout_marginTop="@dimen/smaller_regular"
+            android:layout_marginEnd="@dimen/regular"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_location">
+
+            <TextView
+                android:id="@+id/label_gender"
+                style="@style/SmallDescriptionTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/smaller_regular"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/gender" />
+
+            <TextView
+                android:id="@+id/tv_gender"
+                style="@style/GrayBackgroundTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_shape"
+                tools:text="Male" />
+
+            <TextView
+                android:id="@+id/label_birthdate"
+                style="@style/SmallDescriptionTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/smaller_regular"
+                android:layout_marginTop="@dimen/smaller_regular"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/birth_date" />
+
+            <TextView
+                android:id="@+id/tv_birthdate"
+                style="@style/GrayBackgroundTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_shape"
+                tools:text="dd/mm/yy" />
+
+            <TextView
+                android:id="@+id/label_email"
+                style="@style/SmallDescriptionTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/smaller_regular"
+                android:layout_marginTop="@dimen/smaller_regular"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/email" />
+
+            <TextView
+                android:id="@+id/tv_email"
+                style="@style/GrayBackgroundTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_shape"
+                tools:text="example@yahoo.com" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

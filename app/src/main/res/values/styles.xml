@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="DividerViewStyle">
+        <item name="android:layout_height">@dimen/extra_small</item>
+        <item name="android:background">@color/palette_pure_black</item>
+    </style>
+
+    <style name="DescriptionLightTextStyle">
+        <item name="android:textSize">@dimen/text_large</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textColor">@color/palette_pure_black</item>
+    </style>
+
+    <style name="RedButtonTextStyle">
+        <item name="android:textSize">@dimen/text_regular</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/palette_red</item>
+    </style>
+
+    <style name="GrayBackgroundTextStyle">
+        <item name="android:textSize">@dimen/text_regular</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:paddingTop">@dimen/small</item>
+        <item name="android:paddingBottom">@dimen/small</item>
+        <item name="android:paddingStart">@dimen/smaller_regular</item>
+        <item name="android:paddingEnd">@dimen/smaller_regular</item>
+        <item name="android:layout_marginTop">@dimen/small</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColor">@color/palette_dark_gray</item>
+    </style>
+
+    <style name="MediumDescriptionTextStyle">
+        <item name="android:textSize">@dimen/text_regular</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/palette_dark_gray</item>
+    </style>
+
+    <style name="SmallDescriptionTextStyle">
+        <item name="android:textSize">@dimen/text_smaller_regular</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/palette_light_gray</item>
+    </style>
+
+    <style name="roundedImageViewRounded">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+</resources>
